@@ -60,7 +60,7 @@ public class util {
         for(int x=1;x<arr.length;x++)
         {
             int pos=x;
-            while((arr[pos]>arr[pos-1])&&(pos>0))
+            while((arr[pos]>arr[pos-1])&&(pos>1))
             {
                 intswap(arr,pos,pos-1);
                 pos--;
