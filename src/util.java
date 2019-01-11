@@ -1,7 +1,5 @@
 public class util {
 
-
-
     public static void intswap(int[] arr,int i, int j)
     {
         int temp;
@@ -53,14 +51,12 @@ public class util {
         }
     }
 
-
-
     public static int[]insertionSort(int[] arr)
     {
         for(int x=1;x<arr.length;x++)
         {
             int pos=x;
-            while((arr[pos]>arr[pos-1])&&(pos>1))
+            while((pos>0)&&(arr[pos]<arr[pos-1]))
             {
                 intswap(arr,pos,pos-1);
                 pos--;
