@@ -1,5 +1,9 @@
 public class util {
 
+
+
+    
+
     public static void intswap(int[] arr,int i, int j)
     {
         int temp;
@@ -8,7 +12,41 @@ public class util {
         arr[j]=temp;
     }
 
-    public static void strswap(String[] arr,int i, int j)
+    public static int[] randIntArr(int count)
+    {
+        int[] arr= new int[count];
+        for(int x=0;x<count;x++)
+        {
+            arr[x]=(int)(Math.random()*10001);
+        }
+        return arr;
+    }
+
+    public static int[]insertionSort(int[] arr)
+    {
+        for(int x=1;x<arr.length;x++)
+        {
+            int pos=x;
+            while((pos>0)&&(arr[pos]<arr[pos-1]))
+            {
+                intswap(arr,pos,pos-1);
+                pos--;
+            }
+        }
+        return arr;
+    }
+
+
+
+
+
+
+
+
+
+/*
+
+   public static void strswap(String[] arr,int i, int j)
     {
         String temp;
         temp =arr[i];
@@ -16,13 +54,6 @@ public class util {
         arr[j]=temp;
     }
 
-    public static void doubleswap(double[] arr,int i, int j)
-    {
-        double temp;
-        temp =arr[i];
-        arr[i]=arr[j];
-        arr[j]=temp;
-    }
 
     public static void bubbleSort(String[] arr)
     {
@@ -51,30 +82,6 @@ public class util {
         }
     }
 
-    public static int[]insertionSort(int[] arr)
-    {
-        for(int x=1;x<arr.length;x++)
-        {
-            int pos=x;
-            while((pos>0)&&(arr[pos]<arr[pos-1]))
-            {
-                intswap(arr,pos,pos-1);
-                pos--;
-            }
-        }
-        return arr;
-    }
-
-    public static int[] randIntArr(int count)
-    {
-        int[] arr= new int[count];
-        for(int x=0;x<count;x++)
-        {
-            arr[x]=(int)(Math.random()*10001);
-        }
-        return arr;
-    }
-
     public static String[] randStringArr(int num,int length)
     {
         String[] arr= new String[num];
@@ -95,6 +102,22 @@ public class util {
         return arr;
     }
 
+*/
+
+
+
+
+    /*
+
+    public static void doubleswap(double[] arr,int i, int j)
+    {
+        double temp;
+        temp =arr[i];
+        arr[i]=arr[j];
+        arr[j]=temp;
+    }
+
+
     public static double[] randDouArr(int count)
     {
         double[] arr= new double[count];
@@ -105,6 +128,29 @@ public class util {
         return arr;
     }
 
+    public static void selectionSort(double [] arr){
+        int minPos = 0;
+        for (int curPos = 0; curPos < arr.length-1; curPos++){
+            double minVal = arr[curPos];
+            minPos = curPos;
+            for (int i = curPos+1; i<arr.length; i++){
+                if (arr[i] < minVal){
+                    minVal = arr[i];
+                    minPos = i;
+                }
+            }
+            doubleswap(arr,curPos,minPos);
+        }
+    }
+
+
+
+*/
+
+
+
+
+/*
     public static boolean checkSum(int[] before,int[] after)
     {
         int sumBefore=0;
@@ -137,19 +183,9 @@ public class util {
         }
         return correct;
     }
+*/
 
-    public static void selectionSort(double [] arr){
-        int minPos = 0;
-        for (int curPos = 0; curPos < arr.length-1; curPos++){
-            double minVal = arr[curPos];
-            minPos = curPos;
-            for (int i = curPos+1; i<arr.length; i++){
-                if (arr[i] < minVal){
-                    minVal = arr[i];
-                    minPos = i;
-                }
-            }
-            doubleswap(arr,curPos,minPos);
-        }
-    }
+
+
+
 }
