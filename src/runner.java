@@ -2,9 +2,7 @@ public class runner {
 
     public static void main(String[] args)
     {
-
-       int[] integer = util.randIntArr(100);
-
+       int[] integer = util.randIntArr(10);
 
         for(int num:integer)
             System.out.print(num+" ");
@@ -18,13 +16,10 @@ public class runner {
             System.out.print(num+" ");
         System.out.println();
 
-
         System.out.println("Insertion Sort");
         System.out.println("Time Taken: "+time);
 
-
-        double[] dou = util.randDouArr(100);
-
+        double[] dou = util.randDouArr(10);
 
         for(double num:dou)
             System.out.print(num+" ");
@@ -41,9 +36,7 @@ public class runner {
         System.out.println("Selection Sort");
         System.out.println("Time Taken: "+time);
 
-
-        String[] str = util.randStringArr(1000,1);
-
+        String[] str = util.randStringArr(10,1);
 
         for(String num:str)
             System.out.print(num+" ");
@@ -59,7 +52,6 @@ public class runner {
 
         System.out.println("Bubble Sort");
         System.out.println("Time Taken: "+time);
-
     }
 
 }

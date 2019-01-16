@@ -14,7 +14,7 @@ public class util {
         int[] arr= new int[count];
         for(int x=0;x<count;x++)
         {
-            arr[x]=(int)(Math.random()*10001);
+            arr[x]=(int)(Math.random()*10);
         }
         return arr;
     }
@@ -104,7 +104,7 @@ public class util {
         double[] arr= new double[count];
         for(int x=0;x<count;x++)
         {
-            arr[x]=(Math.random()*10001);
+            arr[x]=(Math.random()*10);
         }
         return arr;
     }
