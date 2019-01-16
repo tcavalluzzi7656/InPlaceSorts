@@ -3,7 +3,7 @@ public class runner {
     public static void main(String[] args)
     {
 
-       int[] integer = util.randIntArr(10000);
+       int[] integer = util.randIntArr(100);
 
 
         for(int num:integer)
@@ -23,17 +23,14 @@ public class runner {
         System.out.println("Time Taken: "+time);
 
 
-
-
-    /*
-        double[] dou = util.randDouArr(10000);
+        double[] dou = util.randDouArr(100);
 
 
         for(double num:dou)
             System.out.print(num+" ");
         System.out.println();
 
-        long time = System.nanoTime();
+        time = System.nanoTime();
         util.selectionSort(dou);
         time=System.nanoTime()-time;
 
@@ -45,9 +42,6 @@ public class runner {
         System.out.println("Time Taken: "+time);
 
 
-        */
-
-        /*
         String[] str = util.randStringArr(1000,1);
 
 
@@ -55,7 +49,7 @@ public class runner {
             System.out.print(num+" ");
         System.out.println();
 
-        long time = System.nanoTime();
+        time = System.nanoTime();
         util.bubbleSort(str);
         time=System.nanoTime()-time;
 
@@ -65,7 +59,7 @@ public class runner {
 
         System.out.println("Bubble Sort");
         System.out.println("Time Taken: "+time);
-        */
+
     }
 
 }

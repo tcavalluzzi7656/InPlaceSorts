@@ -1,9 +1,6 @@
 public class util {
 
 
-
-
-
     public static void intswap(int[] arr,int i, int j)
     {
         int temp;
@@ -35,16 +32,6 @@ public class util {
         }
         return arr;
     }
-
-
-
-
-
-
-
-
-
-/*
 
    public static void strswap(String[] arr,int i, int j)
     {
@@ -102,12 +89,6 @@ public class util {
         return arr;
     }
 
-*/
-
-
-
-
-    /*
 
     public static void doubleswap(double[] arr,int i, int j)
     {
@@ -145,7 +126,6 @@ public class util {
 
 
 
-*/
 
 
 
