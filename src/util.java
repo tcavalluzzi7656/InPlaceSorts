@@ -1,6 +1,9 @@
 public class util {
 
 
+
+
+
     public static void intswap(int[] arr,int i, int j)
     {
         int temp;
@@ -14,7 +17,7 @@ public class util {
         int[] arr= new int[count];
         for(int x=0;x<count;x++)
         {
-            arr[x]=(int)(Math.random()*10);
+            arr[x]=(int)(Math.random()*10001);
         }
         return arr;
     }
@@ -33,7 +36,17 @@ public class util {
         return arr;
     }
 
-   public static void strswap(String[] arr,int i, int j)
+
+
+
+
+
+
+
+
+
+
+    public static void strswap(String[] arr,int i, int j)
     {
         String temp;
         temp =arr[i];
@@ -90,6 +103,12 @@ public class util {
     }
 
 
+
+
+
+
+
+
     public static void doubleswap(double[] arr,int i, int j)
     {
         double temp;
@@ -104,7 +123,7 @@ public class util {
         double[] arr= new double[count];
         for(int x=0;x<count;x++)
         {
-            arr[x]=(Math.random()*10);
+            arr[x]=(Math.random()*10001);
         }
         return arr;
     }
@@ -126,11 +145,39 @@ public class util {
 
 
 
+    public static int binSearch(int num, int[] arr)
+    {
+        boolean done = false;
+        int min=0;
+        int max=arr.length-1;
+        int guesspos=0;
+        if(num<min||num>max)
+        {
+            return -1;
+        }
+        while(!done)
+        {
+            guesspos=(min+max)/2;
+            if(guesspos==arr[num])
+            {
+                done=true;
+            }
+            else if(guesspos<arr[num])
+            {
+                min=(guesspos+max)/2;
+            }
+            else if(guesspos>arr[num])
+            {
+                max=(guesspos+min)/2;
+            }
+        }
+        return guesspos;
+    }
 
 
 
 
-/*
+
     public static boolean checkSum(int[] before,int[] after)
     {
         int sumBefore=0;
@@ -163,7 +210,7 @@ public class util {
         }
         return correct;
     }
-*/
+
 
 
 
