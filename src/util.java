@@ -1,9 +1,6 @@
 public class util {
 
 
-
-
-
     public static void intswap(int[] arr,int i, int j)
     {
         int temp;
@@ -35,13 +32,6 @@ public class util {
         }
         return arr;
     }
-
-
-
-
-
-
-
 
 
 
@@ -128,18 +118,19 @@ public class util {
         return arr;
     }
 
-    public static void selectionSort(double [] arr){
+    public static void selectionSort(String [] arr){
         int minPos = 0;
         for (int curPos = 0; curPos < arr.length-1; curPos++){
-            double minVal = arr[curPos];
+            String minVal = arr[curPos];
             minPos = curPos;
             for (int i = curPos+1; i<arr.length; i++){
-                if (arr[i] < minVal){
+                if (arr[i].compareTo(minVal)<0)
+                {
                     minVal = arr[i];
                     minPos = i;
                 }
             }
-            doubleswap(arr,curPos,minPos);
+            strswap(arr,curPos,minPos);
         }
     }
 
